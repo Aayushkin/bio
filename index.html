@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Bhandari | Tech Entrepreneur</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="full.jpg" type="image/jpg">
+    <style>
+        *{
+            box-sizing: border-box; 
+            padding: auto;
+            margin: auto;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2d9e52;
+            color: #eaf0f5;
+        }
+        header {
+            background: linear-gradient(90deg, #071b38, #237786);
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background: #78db8d;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(4, 88, 11, 0.2);
+        }
+        .section img {
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        h2 {
+            color: #1f6feb;
+        }
+        strong {
+            color: #23a73dbb;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #21262d;
+            font-size: 14px;
+            color: #8b949e;
+        }
+        .links {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 12px;
+        }
+        .links img {
+            width: 42px;
+            height: 42px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>Mr.Aayush Bhandari | <strong>A Passionate Tech Entrepreneur</strong></header>
+    <div class="container">
+        <div class="section">
+            <img src="my.jpg" alt="Aayush Bhandari">
+            <div>
+                <h2>About <strong>Mr.Aayush Bhandari</strong></h2>
+                <p><strong>Aayush Bhandari</strong>, a dedicated computer engineering student from Nepal, has always had a strong curiosity and passion for technology. Despite the challenges posed by the COVID-19 lockdown in class 6, he remained determined to continue learning and growing.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="tech.jpg" alt="Technology">
+            <div>
+                <h2>Journey into <strong>Technology</strong></h2>
+                <p>His real passion for technology ignited in class 9, leading him to explore the digital world and establish his own tech company, <strong>Aayush-Tech07</strong>, a platform dedicated to modern tech solutions and innovations.</p>
+                <p>Visit: <a href="https://aayush-tech07.website" target="_blank">Aayush-Tech07</a></p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="full.jpg" alt="Family Support">
+            <img src="family.jpg" alt="Family Support">
+            <img src="brother.jpg" alt="Family Support">
+            <div>
+                <h2><strong>Family Support</strong> & Inspiration</h2>
+                <p><strong>Aayush</strong> credits his success to his family: his father, <strong>Mr. Bishnu Bhandari</strong>, his mother, <strong>Mrs. Laxmi Bhandari</strong>, and his beloved grandmother, <strong>Mrs. Damayanti Bhandari</strong>. His younger brother's greatest inspiration is he, <strong>Mr. Anup Bhandari</strong>, who continuously being motivated by him.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="friend.jpg" alt="Friendship">
+            <div>
+                <h2><strong>Friendship</strong> & Support</h2>
+                <p><strong>Aayush</strong> values true friendship, and his best friend, <strong>Mr. Bibash Panthi</strong>, has been a constant support system throughout his journey.</p>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <a href="https://github.com/aayushkin" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://m.facebook.com/people/Aayush-tech07/100091516755478/" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/@aayushtech07" target="_blank">
+            <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+        <a href="https://aayush-tech07.website" target="_blank">
+            <i class="fas fa-globe fa-2x"></i>
+        </a>
+        <a href="http://loanalculator01.blogspot.com/" target="_blank">
+            <i class="fab fa-blogger fa-2x"></i>
+        </a>
+    </div>
+    <div class="footer">
+        &copy; 2025 <strong>Aayush Bhandari</strong> | Innovating the Future
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function adjustLayout() {
+            const sections = document.querySelectorAll(".section");
+            sections.forEach(section => {
+                if (window.innerWidth <= 768) {
+                section.style.flexDirection = "column";
+                section.style.textAlign = "center";
+                section.addEventListener("click", function () {
+                    const content = section.querySelector("div");
+                    if (content.style.display === "none" || !content.style.display) {
+                    content.style.display = "block";
+                    } else {
+                    content.style.display = "none";
+                    }
+                });
+                const content = section.querySelector("div");
+                content.style.display = "none";
+                } else {
+                section.style.flexDirection = "row";
+                section.style.textAlign = "left";
+                const content = section.querySelector("div");
+                content.style.display = "block";
+                section.removeEventListener("click", function () {});
+                }
+            });
+            }
+
+            adjustLayout();
+            window.addEventListener("resize", adjustLayout);
+        });
+    </script>
+</body>
+</html>
